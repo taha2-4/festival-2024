@@ -2,7 +2,7 @@ Action
 -The Covenant
 -Fury
 -Safe
--Tu ne tueras point
+-Hacksaw Ridge
 -Taken
 -The Equalizer
 
@@ -25,7 +25,7 @@ Science-fiction
 -Time Out
 -Avatar
 -Interstellar
--Je suis une légende
+-I am Legend
 
 Kids
 -Le roi lion
