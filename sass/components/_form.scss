@@ -140,14 +140,14 @@ textarea {
 
 input[type="checkbox"],
 input[type="radio"],
-{
-@include vendor('appearance', 'none');
-display: block;
-float: left;
-margin-right: -2rem;
-opacity: 0;
-width: 1rem;
-z-index: -1;
+select {
+	@include vendor('appearance', 'none');
+	display: block;
+	float: left;
+	margin-right: -2rem;
+	opacity: 0;
+	width: 1rem;
+	z-index: -1;
 }
 
 &+label {
@@ -183,7 +183,6 @@ z-index: -1;
 	&:before {
 		content: '\f00c';
 	}
-}
 }
 
 input[type="checkbox"] {
@@ -252,49 +251,49 @@ input[type="radio"] {
 
 	input[type="checkbox"],
 	input[type="radio"],
-	{
-	&+label {
-		color: _palette($p, fg);
+	select {
+		&+label {
+			color: _palette($p, fg);
 
-		&:before {
-			border-color: _palette($p, border);
+			&:before {
+				border-color: _palette($p, border);
+			}
+		}
+
+		&:checked+label {
+			&:before {
+				background-color: _palette($p, fg-bold);
+				border-color: _palette($p, fg-bold);
+				color: _palette($p, bg);
+			}
+		}
+
+		&:focus+label {
+			&:before {
+				border-color: _palette($p, accent);
+			}
 		}
 	}
 
-	&:checked+label {
-		&:before {
-			background-color: _palette($p, fg-bold);
-			border-color: _palette($p, fg-bold);
-			color: _palette($p, bg);
-		}
+	::-webkit-input-placeholder {
+		color: _palette($p, fg-light) !important;
 	}
 
-	&:focus+label {
-		&:before {
-			border-color: _palette($p, accent);
-		}
+	:-moz-placeholder {
+		color: _palette($p, fg-light) !important;
 	}
-}
 
-::-webkit-input-placeholder {
-	color: _palette($p, fg-light) !important;
-}
+	::-moz-placeholder {
+		color: _palette($p, fg-light) !important;
+	}
 
-:-moz-placeholder {
-	color: _palette($p, fg-light) !important;
-}
+	:-ms-input-placeholder {
+		color: _palette($p, fg-light) !important;
+	}
 
-::-moz-placeholder {
-	color: _palette($p, fg-light) !important;
-}
-
-:-ms-input-placeholder {
-	color: _palette($p, fg-light) !important;
-}
-
-.formerize-placeholder {
-	color: _palette($p, fg-light) !important;
-}
+	.formerize-placeholder {
+		color: _palette($p, fg-light) !important;
+	}
 }
 
 @include color-form;

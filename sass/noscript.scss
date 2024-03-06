@@ -5,7 +5,7 @@
 @import 'libs/breakpoints';
 @import 'libs/html-grid';
 @import 'libs/fixed-grid';
-@import 'font-awesome.min.css';
+@import '../css/fontawesome-all.min.css';
 
 /*
 	Massively by HTML5 UP
@@ -17,7 +17,7 @@
 
 	#wrapper {
 		background-color:		_palette(wrapper-bg);
-		background-image:		url('/img/overlay.png'),	linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1)),	url('/img/bg.jpg');
+		background-image:		url('../../img/overlay.png'),	linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1)),	url('../../img/bg.jpg');
 		background-size:		auto,								auto,														100% auto;
 		background-position:	center,								center,														top center;
 		background-repeat:		repeat,								no-repeat,													no-repeat;
