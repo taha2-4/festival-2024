@@ -4862,6 +4862,12 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 }
 
 /* contact truc did */
+.main {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+}
+
 .up {
 	display: flex;
 	flex-direction: row;
