@@ -1,4 +1,4 @@
-Action
+Action (t)
 -The Covenant
 -Fury
 -Safe
@@ -6,19 +6,19 @@ Action
 -Taken
 -The Equalizer
 
-Aventure
+Aventure (s)
 -Seul au monde
 -Voyage au centre de la Terre
 -Uncharted
 -Hunger Games
 
-Comedie
+Comedie (b)
 -Intouchables
 -Red Notice
 -Agents presque secrets
 -Braquage à l'ancienne
 
-Science-fiction
+Science-fiction (b)
 -Le Seigneur des anneaux 3 - Le retour du roi
 -Inception
 -Lucy
@@ -27,7 +27,7 @@ Science-fiction
 -Interstellar
 -I am Legend
 
-Kids
+Kids (n)
 -Le roi lion
 -La reine des neiges
 -Cars
