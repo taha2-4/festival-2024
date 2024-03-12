@@ -2,152 +2,158 @@
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Agenda - Festival</title>
-    <link rel="stylesheet" href="./stylesheet/css/main.css">
-    <noscript>
-        <link rel="stylesheet" href="./stylesheet/css/noscript.css">
-    </noscript>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agenda - Festival</title>
+  <link rel="stylesheet" href="./stylesheet/css/main.css">
+  <noscript>
+    <link rel="stylesheet" href="./stylesheet/css/noscript.css">
+  </noscript>
 </head>
 
 <body class="is-preload">
-    <div id="wrapper">
-        <header id="header">
-            <a href="accueil.html" class="logo">Festival</a>
-        </header>
-        <nav id="nav">
-            <ul class="links">
-                <li><a href="accueil.html">Accueil</a></li>
-                <li><a href="programmation.html">Programmation</a></li>
-                <li class="active"><a href="agenda.html">Agenda</a></li>
-                <li><a href="archive.html">Archive</a></li>
-                <li><a href="pageTickets.html">Tickets</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div id="main">
-            <h1>Agenda</h1>
+  <div id="wrapper">
+    <header id="header">
+      <a href="accueil.html" class="logo">Festival</a>
+    </header>
+    <nav id="nav">
+      <ul class="links">
+        <li><a href="accueil.html">Accueil</a></li>
+        <li><a href="programmation.html">Programmation</a></li>
+        <li class="active"><a href="agenda.html">Agenda</a></li>
+        <li><a href="archive.html">Archive</a></li>
+        <li><a href="pageTickets.html">Tickets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="main">
+      <h1>Agenda</h1>
 
-            <ul id="dateList">
-                <li><a href="#" onclick="showFilms('2024-01-01')">1 janvier 2024</a></li>
-                <li><a href="#" onclick="showFilms('2024-01-02')">2 janvier 2024</a></li>
-                <li><a href="#" onclick="showFilms('2024-01-03')">3 janvier 2024</a></li>
-                <li><a href="#" onclick="showFilms('2024-01-04')">4 janvier 2024</a></li>
-                <li><a href="#" onclick="showFilms('2024-01-05')">5 janvier 2024</a></li>
-                <li><a href="#" onclick="showFilms('2024-01-06')">6 janvier 2024</a></li>
-                <li><a href="#" onclick="showFilms('2024-01-07')">7 janvier 2024</a></li>
-                <li><a href="#" onclick="showFilms('2024-01-08')">8 janvier 2024</a></li>
-                <li><a href="#" onclick="showFilms('2024-01-09')">9 janvier 2024</a></li>
-                <li><a href="#" onclick="showFilms('2024-01-10')">10 janvier 2024</a></li>
-              </ul>
-              
-              <div id="filmsContainer" class="hidden">
-              </div>
-              
-              <script>
+      <ul id="dateList">
+        <li><a href="#" onclick="showFilms('2024-01-01')">1 janvier 2024</a></li>
+        <li><a href="#" onclick="showFilms('2024-01-02')">2 janvier 2024</a></li>
+        <li><a href="#" onclick="showFilms('2024-01-03')">3 janvier 2024</a></li>
+        <li><a href="#" onclick="showFilms('2024-01-04')">4 janvier 2024</a></li>
+        <li><a href="#" onclick="showFilms('2024-01-05')">5 janvier 2024</a></li>
+        <li><a href="#" onclick="showFilms('2024-01-06')">6 janvier 2024</a></li>
+        <li><a href="#" onclick="showFilms('2024-01-07')">7 janvier 2024</a></li>
+        <li><a href="#" onclick="showFilms('2024-01-08')">8 janvier 2024</a></li>
+        <li><a href="#" onclick="showFilms('2024-01-09')">9 janvier 2024</a></li>
+        <li><a href="#" onclick="showFilms('2024-01-10')">10 janvier 2024</a></li>
+      </ul>
 
-                var filmsByDate = {
-                  '2024-01-01': [
-                    { title: "Le roi lion", description: "Rob Minkoff, Roger Allers - 🕒 - Salle 1" },
-                    { title: "Seul au monde", description: "Robert Zemeckis - 🕒 - Salle 1" },
-                    { title: "Intouchables", description: " Olivier Nakache, Éric Toledano - 🕒 - Salle 2" },
-                    { title: "Le Seigneur des anneaux 3 - Le retour du roi", description: "Peter Jackson - 🕒 - Salle 1 " },
-                    { title: "The Covenant", description: "Guy Ritchie - 🕒 - Salle 2" }
-                  ],
+      <div id="filmsContainer" class="hidden">
+      </div>
 
-                  '2024-01-02': [
-                    { title: "Le roi lion", description: "Rob Minkoff, Roger Allers - 🕒 - Salle 1" },
-                    { title: "Seul au monde", description: "Robert Zemeckis - 🕒 - Salle 1" },
-                    { title: "Intouchables", description: " Olivier Nakache, Éric Toledano - 🕒 - Salle 2" },
-                    { title: "Le Seigneur des anneaux 3 - Le retour du roi", description: "Peter Jackson - 🕒 - Salle 1 " },
-                    { title: "The Covenant", description: "Guy Ritchie - 🕒 - Salle 2" }
-                  ],
+      <script>
 
-                  '2024-01-03': [
-                    { title: "Le roi lion", description: "Rob Minkoff, Roger Allers - 🕒 - Salle 1" },
-                    { title: "Seul au monde", description: "Robert Zemeckis - 🕒 - Salle 1" },
-                    { title: "Intouchables", description: " Olivier Nakache, Éric Toledano - 🕒 - Salle 2" },
-                    { title: "Le Seigneur des anneaux 3 - Le retour du roi", description: "Peter Jackson - 🕒 - Salle 1 " },
-                    { title: "The Covenant", description: "Guy Ritchie - 🕒 - Salle 2" }
-                  ],
-                  '2024-01-04': [
-                    { title: "Le roi lion", description: "Rob Minkoff, Roger Allers - 🕒 - Salle 1" },
-                    { title: "Seul au monde", description: "Robert Zemeckis - 🕒 - Salle 1" },
-                    { title: "Intouchables", description: " Olivier Nakache, Éric Toledano - 🕒 - Salle 2" },
-                    { title: "Le Seigneur des anneaux 3 - Le retour du roi", description: "Peter Jackson - 🕒 - Salle 1 " },
-                    { title: "The Covenant", description: "Guy Ritchie - 🕒 - Salle 2" }
-                  ],
+        var filmsByDate = {
+          '2024-01-01': [
+            { title: "Le roi lion", description: "Rob Minkoff, Roger Allers - 🕒 - Salle 1" },
+            { title: "Seul au monde", description: "Robert Zemeckis - 🕒 - Salle 1" },
+            { title: "Intouchables", description: " Olivier Nakache, Éric Toledano - 🕒 - Salle 2" },
+            { title: "Le Seigneur des anneaux 3 - Le retour du roi", description: "Peter Jackson - 🕒 - Salle 1 " },
+            { title: "The Covenant", description: "Guy Ritchie - 🕒 - Salle 2" }
+          ],
 
-                  '2024-01-05': [
-                    { title: "Le roi lion", description: "Rob Minkoff, Roger Allers - 🕒 - Salle 1" },
-                    { title: "Seul au monde", description: "Robert Zemeckis - 🕒 - Salle 1" },
-                    { title: "Intouchables", description: " Olivier Nakache, Éric Toledano - 🕒 - Salle 2" },
-                    { title: "Le Seigneur des anneaux 3 - Le retour du roi", description: "Peter Jackson - 🕒 - Salle 1 " },
-                    { title: "The Covenant", description: "Guy Ritchie - 🕒 - Salle 2" }
-                  ],
+          '2024-01-02': [
+            { title: "Le roi lion", description: "Rob Minkoff, Roger Allers - 🕒 - Salle 1" },
+            { title: "Seul au monde", description: "Robert Zemeckis - 🕒 - Salle 1" },
+            { title: "Intouchables", description: " Olivier Nakache, Éric Toledano - 🕒 - Salle 2" },
+            { title: "Le Seigneur des anneaux 3 - Le retour du roi", description: "Peter Jackson - 🕒 - Salle 1 " },
+            { title: "The Covenant", description: "Guy Ritchie - 🕒 - Salle 2" }
+          ],
 
-                  '2024-01-06': [
-                    { title: "Le roi lion", description: "Rob Minkoff, Roger Allers - 🕒 - Salle 1" },
-                    { title: "Seul au monde", description: "Robert Zemeckis - 🕒 - Salle 1" },
-                    { title: "Intouchables", description: " Olivier Nakache, Éric Toledano - 🕒 - Salle 2" },
-                    { title: "Le Seigneur des anneaux 3 - Le retour du roi", description: "Peter Jackson - 🕒 - Salle 1 " },
-                    { title: "The Covenant", description: "Guy Ritchie - 🕒 - Salle 2" }
-                  ],
+          '2024-01-03': [
+            { title: "Le roi lion", description: "Rob Minkoff, Roger Allers - 🕒 - Salle 1" },
+            { title: "Seul au monde", description: "Robert Zemeckis - 🕒 - Salle 1" },
+            { title: "Intouchables", description: " Olivier Nakache, Éric Toledano - 🕒 - Salle 2" },
+            { title: "Le Seigneur des anneaux 3 - Le retour du roi", description: "Peter Jackson - 🕒 - Salle 1 " },
+            { title: "The Covenant", description: "Guy Ritchie - 🕒 - Salle 2" }
+          ],
+          '2024-01-04': [
+            { title: "Le roi lion", description: "Rob Minkoff, Roger Allers - 🕒 - Salle 1" },
+            { title: "Seul au monde", description: "Robert Zemeckis - 🕒 - Salle 1" },
+            { title: "Intouchables", description: " Olivier Nakache, Éric Toledano - 🕒 - Salle 2" },
+            { title: "Le Seigneur des anneaux 3 - Le retour du roi", description: "Peter Jackson - 🕒 - Salle 1 " },
+            { title: "The Covenant", description: "Guy Ritchie - 🕒 - Salle 2" }
+          ],
 
-                  '2024-01-07': [
-                    { title: "Le roi lion", description: "Rob Minkoff, Roger Allers - 🕒 - Salle 1" },
-                    { title: "Seul au monde", description: "Robert Zemeckis - 🕒 - Salle 1" },
-                    { title: "Intouchables", description: " Olivier Nakache, Éric Toledano - 🕒 - Salle 2" },
-                    { title: "Le Seigneur des anneaux 3 - Le retour du roi", description: "Peter Jackson - 🕒 - Salle 1 " },
-                    { title: "The Covenant", description: "Guy Ritchie - 🕒 - Salle 2" }
-                  ],
+          '2024-01-05': [
+            { title: "Le roi lion", description: "Rob Minkoff, Roger Allers - 🕒 - Salle 1" },
+            { title: "Seul au monde", description: "Robert Zemeckis - 🕒 - Salle 1" },
+            { title: "Intouchables", description: " Olivier Nakache, Éric Toledano - 🕒 - Salle 2" },
+            { title: "Le Seigneur des anneaux 3 - Le retour du roi", description: "Peter Jackson - 🕒 - Salle 1 " },
+            { title: "The Covenant", description: "Guy Ritchie - 🕒 - Salle 2" }
+          ],
 
-                  '2024-01-08': [
-                    { title: "Le roi lion", description: "Rob Minkoff, Roger Allers - 🕒 - Salle 1" },
-                    { title: "Seul au monde", description: "Robert Zemeckis - 🕒 - Salle 1" },
-                    { title: "Intouchables", description: " Olivier Nakache, Éric Toledano - 🕒 - Salle 2" },
-                    { title: "Le Seigneur des anneaux 3 - Le retour du roi", description: "Peter Jackson - 🕒 - Salle 1 " },
-                    { title: "The Covenant", description: "Guy Ritchie - 🕒 - Salle 2" }
-                  ],
+          '2024-01-06': [
+            { title: "Le roi lion", description: "Rob Minkoff, Roger Allers - 🕒 - Salle 1" },
+            { title: "Seul au monde", description: "Robert Zemeckis - 🕒 - Salle 1" },
+            { title: "Intouchables", description: " Olivier Nakache, Éric Toledano - 🕒 - Salle 2" },
+            { title: "Le Seigneur des anneaux 3 - Le retour du roi", description: "Peter Jackson - 🕒 - Salle 1 " },
+            { title: "The Covenant", description: "Guy Ritchie - 🕒 - Salle 2" }
+          ],
 
-                  '2024-01-09': [
-                    { title: "Le roi lion", description: "Rob Minkoff, Roger Allers - 🕒 - Salle 1" },
-                    { title: "Seul au monde", description: "Robert Zemeckis - 🕒 - Salle 1" },
-                    { title: "Intouchables", description: " Olivier Nakache, Éric Toledano - 🕒 - Salle 2" },
-                    { title: "Le Seigneur des anneaux 3 - Le retour du roi", description: "Peter Jackson - 🕒 - Salle 1 " },
-                    { title: "The Covenant", description: "Guy Ritchie - 🕒 - Salle 2" }
-                  ],
+          '2024-01-07': [
+            { title: "Le roi lion", description: "Rob Minkoff, Roger Allers - 🕒 - Salle 1" },
+            { title: "Seul au monde", description: "Robert Zemeckis - 🕒 - Salle 1" },
+            { title: "Intouchables", description: " Olivier Nakache, Éric Toledano - 🕒 - Salle 2" },
+            { title: "Le Seigneur des anneaux 3 - Le retour du roi", description: "Peter Jackson - 🕒 - Salle 1 " },
+            { title: "The Covenant", description: "Guy Ritchie - 🕒 - Salle 2" }
+          ],
 
-                  '2024-01-10': [
-                    { title: "Le roi lion", description: "Rob Minkoff, Roger Allers - 🕒 - Salle 1" },
-                    { title: "Seul au monde", description: "Robert Zemeckis - 🕒 - Salle 1" },
-                    { title: "Intouchables", description: " Olivier Nakache, Éric Toledano - 🕒 - Salle 2" },
-                    { title: "Le Seigneur des anneaux 3 - Le retour du roi", description: "Peter Jackson - 🕒 - Salle 1 " },
-                    { title: "The Covenant", description: "Guy Ritchie - 🕒 - Salle 2" }
-                  ],
-                  
-                };
-              
-                function showFilms(date) {
-                  var dateList = document.getElementById('dateList');
-                  var filmsContainer = document.getElementById('filmsContainer');
-                  var films = filmsByDate[date];
-                  
-                  dateList.classList.add('hidden');
-            
-                  var html = "<h3>Films pour le " + date + "</h3><ul>";
-                  for (var i = 0; i < films.length; i++) {
-                    html += "<li><strong>Film " + (i + 1) + " :</strong> " + films[i].description + "</li>";
-                  }
-                  html += "</ul>";
-              
-                  filmsContainer.innerHTML = html;
-                  filmsContainer.classList.remove('hidden');
-                }
-              </script>
-        </div>
+          '2024-01-08': [
+            { title: "Le roi lion", description: "Rob Minkoff, Roger Allers - 🕒 - Salle 1" },
+            { title: "Seul au monde", description: "Robert Zemeckis - 🕒 - Salle 1" },
+            { title: "Intouchables", description: " Olivier Nakache, Éric Toledano - 🕒 - Salle 2" },
+            { title: "Le Seigneur des anneaux 3 - Le retour du roi", description: "Peter Jackson - 🕒 - Salle 1 " },
+            { title: "The Covenant", description: "Guy Ritchie - 🕒 - Salle 2" }
+          ],
+
+          '2024-01-09': [
+            { title: "Le roi lion", description: "Rob Minkoff, Roger Allers - 🕒 - Salle 1" },
+            { title: "Seul au monde", description: "Robert Zemeckis - 🕒 - Salle 1" },
+            { title: "Intouchables", description: " Olivier Nakache, Éric Toledano - 🕒 - Salle 2" },
+            { title: "Le Seigneur des anneaux 3 - Le retour du roi", description: "Peter Jackson - 🕒 - Salle 1 " },
+            { title: "The Covenant", description: "Guy Ritchie - 🕒 - Salle 2" }
+          ],
+
+          '2024-01-10': [
+            { title: "Le roi lion", description: "Rob Minkoff, Roger Allers - 🕒 - Salle 1" },
+            { title: "Seul au monde", description: "Robert Zemeckis - 🕒 - Salle 1" },
+            { title: "Intouchables", description: " Olivier Nakache, Éric Toledano - 🕒 - Salle 2" },
+            { title: "Le Seigneur des anneaux 3 - Le retour du roi", description: "Peter Jackson - 🕒 - Salle 1 " },
+            { title: "The Covenant", description: "Guy Ritchie - 🕒 - Salle 2" }
+          ],
+
+        };
+
+        function showFilms(date) {
+          var dateList = document.getElementById('dateList');
+          var filmsContainer = document.getElementById('filmsContainer');
+          var films = filmsByDate[date];
+
+          dateList.classList.add('hidden');
+
+          var html = "<h3>Films pour le " + date + "</h3><ul>";
+          for (var i = 0; i < films.length; i++) {
+            html += "<li><strong>Film " + (i + 1) + " :</strong> " + films[i].description + "</li>";
+          }
+          html += "</ul>";
+
+          filmsContainer.innerHTML = html;
+          filmsContainer.classList.remove('hidden');
+        }
+      </script>
     </div>
+  </div>
+  <div id="copyright">
+    <ul>
+      <li>&copy; Untitled</li>
+      <li>Design from : <a href="https://github.com/taha2-4/festival-2024">THE BEST</a></li>
+    </ul>
+  </div>
 </body>
 
 </html>
