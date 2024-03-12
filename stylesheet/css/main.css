@@ -4892,8 +4892,8 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 }
 
 .instagram {
-	margin-top: 1.5em;
-	margin-left: 1.2em;
+	margin-top: 2em;
+	margin-left: 50%;
 	fill: #cc39a4;
 }
 
@@ -4909,8 +4909,8 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 }
 
 .twitter {
-	margin-top: 1.5em;
-	margin-left: -.9em;
+	margin-top: 2em;
+	margin-left: -1em;
 	fill: #03A9F4;
 }
 
@@ -4927,7 +4927,7 @@ body.is-preload #intro:not(.hidden)+#header+#nav {
 
 .github {
 	margin-top: -.6em;
-	margin-left: 1.2em;
+	margin-left: 50%;
 }
 
 .card4 {
